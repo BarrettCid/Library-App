@@ -1,0 +1,40 @@
+<div class="book-container">
+    <mat-card appearance="raised" class="book-card">
+    <div *ngIf="book.coverImage != undefined" class="image-wrapper">
+        <img src="{{getImageUrl()}}" class="image-display">
+    </div>
+    <div class="book-meta-data">
+        <div class="book-data">
+            <p>{{book.title}}</p>
+            <p>Author: {{book.author}}</p>
+            <p>Publisher: {{book.publisher}}</p>
+            <p>Description:</p>
+            <p>{{book.description}}</p>
+        </div>
+
+        <div class="checkout-button">
+            <div *ngIf="canBeCheckedOut()">
+                <button mat-button (click)="checkout()">
+                    Checkout
+                </button>
+            </div>
+            <div *ngIf="!canBeCheckedOut()">
+                This book is currently checked out. Come back later to get a copy.
+            </div>
+            <div *ngIf="checkLibrarianRole()">
+                <button mat-button (click)="navigateManage(book.bookId)">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </button>
+                <button mat-button (click)="checkIn(book.bookId)">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </mat-card>
+</div>
+<app-book-reviews [bookId]="bookId"></app-book-reviews>

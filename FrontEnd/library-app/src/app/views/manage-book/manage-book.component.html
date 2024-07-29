@@ -1,0 +1,70 @@
+<div class="manage-container">
+    <mat-card appearance="raised" class="manage-card" > 
+        <form class="flex flex-column form-style" [formGroup]="formGroup">
+
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput formControlName="title" placeholder="title" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('title')!.touched && formGroup!.get('title')!.errors">
+                A title is required.
+                </small>
+            </mat-error>
+
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Author</mat-label>
+                <input matInput formControlName="author" placeholder="author" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('author')!.touched && formGroup!.get('author')!.errors">
+                An author is required.
+                </small>
+            </mat-error>
+
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Publisher</mat-label>
+                <input matInput formControlName="publisher" placeholder="publisher" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('publisher')!.touched && formGroup!.get('publisher')!.errors">
+                A publisher name is required.
+                </small>
+            </mat-error>
+
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Description</mat-label>
+                <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5" formControlName="description" placeholder="description" class="form-input"></textarea>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('description')!.touched && formGroup!.get('description')!.errors">
+                A description is required.
+                </small>
+            </mat-error>
+
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>ISBN</mat-label>
+                <input matInput formControlName="isbn" placeholder="isbn" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('isbn')!.touched && formGroup!.get('isbn')!.errors">
+                An isbn is required.
+                </small>
+            </mat-error>
+             
+            <div class="flex">
+                <button type="button"  [disabled]="!formGroup.valid" mat-stroked-button class="form confirm-button login-form-button manage-button" (click)="saveBook()">Save</button>
+                <button type="button"  mat-stroked-button class="form confirm-button login-form-button manage-button" (click)="deleteBook()">Delete</button>
+                <button type="button"  mat-stroked-button class="form confirm-button login-form-button manage-button" (click)="cancel()">Cancel</button>
+            </div>
+            
+        </form>
+        <div class="image-wrapper">
+            <img id="imgCover" class="imgage-display" #imgCover src="#" alt="your image" accept=".png, .jpg, .jpeg"/>
+            <div>
+                <input type="file" #file name="coverimage" class="file-upload" (change)="updateImage()">
+            </div>
+         </div>
+        
+    </mat-card>
+</div>

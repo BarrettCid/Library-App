@@ -1,0 +1,55 @@
+.review-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    margin-top: 20px;
+    .create-review{
+        min-width: 60%;
+    }
+    .reviews{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 60%;
+    }
+}
+
+.rating-list{
+    float:left;
+    list-style-type: none;
+    color: #999999;
+    li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.flex-item {
+    min-width: 100%;
+}
+
+.rating-list li.selected {
+    color: #ffd700;
+}
+
+.reviewed {
+    color: #ffd700;
+}
+
+@media only screen and (max-width: 800px) {
+    .review-container{
+        .create-review {
+            min-width: 100%;
+            text-wrap: wrap;
+          }
+        .reviews{
+            min-width: 100%;
+        }
+    }
+    
+    
+    .book-meta-data {
+        margin: 10px;
+    }
+  }

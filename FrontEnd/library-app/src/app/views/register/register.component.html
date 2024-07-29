@@ -1,0 +1,66 @@
+<div class="login-container">
+    <mat-card appearance="raised" class="login-card" > 
+        <form class="flex flex-column" [formGroup]="formGroup">
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput formControlName="username" placeholder="username" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('username')!.touched && formGroup!.get('username')!.errors">
+                An email address is required.
+                </small>
+            </mat-error>
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>First name</mat-label>
+                <input matInput formControlName="firstname" placeholder="first name" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('firstname')!.touched && formGroup!.get('firstname')!.errors">
+                A first name is required.
+                </small>
+            </mat-error>
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Last name</mat-label>
+                <input matInput formControlName="lastname" placeholder="last name" class="form-input" required>
+            </mat-form-field>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('lastname')!.touched && formGroup!.get('lastname')!.errors">
+                A last name is required.
+                </small>
+            </mat-error>
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" placeholder="password" class="form-input">
+            </mat-form-field>
+            <mat-error>
+                <small *ngIf="formGroup.get('password')!.touched && formGroup.get('password')!.errors">
+                You must enter a password
+                </small>
+            </mat-error>
+            <mat-form-field class="flex-item" appearance="fill">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password" matInput formControlName="confirmPassword" placeholder="confirm password" class="form-input">
+            </mat-form-field>
+            <mat-error>
+                <small *ngIf="formGroup.get('password')!.touched && formGroup.hasError('passwordMatchError')">
+                Your passwords must match.
+                </small>
+            </mat-error>
+            <mat-form-field>
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="selectedRole" class="form-input">
+                  @for (role of roles; track role) {
+                    <mat-option [value]="role">{{role}}</mat-option>
+                  }
+                </mat-select>
+                <small *ngIf="formGroup.get('selectedRole')!.touched && formGroup.get('selectedRole')!.errors">
+                    Please select a role.
+                </small>
+            </mat-form-field>
+            <div class="flex">
+                <button type="button" [disabled]="!formGroup.valid" mat-stroked-button class="form confirm-button login-form-button" (click)="register()">Register</button>
+            </div>
+        </form>
+    </mat-card>
+</div>
+

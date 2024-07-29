@@ -1,0 +1,60 @@
+
+<div class="background-container">
+    <div class="search-container">
+        <mat-accordion class="search-panel">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header class="search-panel">
+                    <mat-panel-title> Search </mat-panel-title>
+                </mat-expansion-panel-header>
+                <form class="flex flex-column" [formGroup]="formGroup">
+                    <mat-form-field class="flex-item" appearance="fill">
+                        <mat-label>Title</mat-label>
+                        <input matInput formControlName="title" placeholder="title" class="form-input" (input)="searchTitle(formGroup.controls['title'].value)" required>
+                    </mat-form-field>
+                    <mat-form-field class="flex-item" appearance="fill">
+                        <mat-label>Author</mat-label>
+                        <input matInput formControlName="author" placeholder="author" class="form-input" (input)="searchAuthor(formGroup.controls['author'].value)" required>
+                    </mat-form-field>
+                    <mat-form-field class="flex-item" appearance="fill">
+                        <mat-label>Publisher</mat-label>
+                        <input matInput formControlName="publisher" placeholder="publisher" class="form-input" (input)="searchPublisher(formGroup.controls['publisher'].value)" required>
+                    </mat-form-field>
+                </form>
+                </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div *ngIf="results.length == 0">
+        <mat-card class="result-container">
+            <p style="margin-left: 10px;">Click the search bar and start typing away. We will return any results from our system we find.</p>
+        </mat-card>
+    </div>
+    <div  *ngIf="results.length > 0">
+        <mat-card class="result-container">
+            <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by title">Title</th>
+                    <td mat-cell *matCellDef="let book">{{book.title}}</td>
+                </ng-container> 
+                <ng-container matColumnDef="author">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by author">Author</th>
+                    <td mat-cell *matCellDef="let book">{{book.author}}</td>
+                </ng-container>
+                <ng-container matColumnDef="publisher">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by publisher">Publisher</th>
+                    <td mat-cell *matCellDef="let book">{{book.publisher}}</td>
+                </ng-container>
+                
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row
+                (click)="navigateBook(row)"
+                *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            <mat-paginator [pageSizeOptions]="[10, 25, 50]"
+                    showFirstLastButtons
+                    aria-label="Select page of books">
+            </mat-paginator>
+        </mat-card>
+    </div>
+</div>
+

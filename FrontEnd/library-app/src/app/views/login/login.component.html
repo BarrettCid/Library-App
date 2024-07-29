@@ -1,0 +1,31 @@
+<div class="login-container">
+    <mat-card appearance="raised" class="login-card" > 
+        <form class="flex flex-column" [formGroup]="formGroup">
+            <div>
+                <mat-form-field class="flex-item" appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="username" placeholder="username" class="form-input" required>
+                </mat-form-field>
+            </div>
+            <mat-error class="flex-item">
+                <small *ngIf="formGroup.get('username')!.touched && formGroup!.get('username')!.errors">
+                You must enter your username
+                </small>
+            </mat-error>
+            <div>
+                <mat-form-field class="flex-item" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password" placeholder="password" class="form-input">
+                </mat-form-field>
+                <mat-error>
+                    <small *ngIf="formGroup.get('password')!.touched && formGroup.get('password')!.errors">
+                    You must enter a password
+                    </small>
+                </mat-error>
+            </div>
+            <div class="flex">
+                <button type="button" [disabled]="!formGroup.valid" mat-stroked-button class="form confirm-button login-form-button" (click)="login()">Login</button>
+            </div>
+        </form>
+    </mat-card>
+</div>

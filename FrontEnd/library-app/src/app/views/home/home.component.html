@@ -1,0 +1,31 @@
+<div class="home-container">
+    <mat-card class="card-container">
+        <p>Welcome to Cid's Library. Use the book search to find a specific book. Here are five books you may be interested in.</p>
+        <div class="featured-books-container">
+            <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by title">Title</th>
+                    <td mat-cell *matCellDef="let book">{{book.title}}</td>
+                </ng-container> 
+                <ng-container matColumnDef="author">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by author">Author</th>
+                    <td mat-cell *matCellDef="let book">{{book.author}}</td>
+                </ng-container>
+                <ng-container matColumnDef="publisher">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by publisher">Publisher</th>
+                    <td mat-cell *matCellDef="let book">{{book.publisher}}</td>
+                </ng-container>
+                <ng-container matColumnDef="pagecount">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by pagecount">Page Count</th>
+                    <td mat-cell *matCellDef="let book">{{book.pageCount}}</td>
+                </ng-container>
+                
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row
+                (click)="navigateBook(row)"
+                *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>          
+        </div>
+    </mat-card>
+</div>

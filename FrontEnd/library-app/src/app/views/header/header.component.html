@@ -1,0 +1,41 @@
+<div class="header-toolbar mat-headline-large">
+    <mat-toolbar class="flex header-toolbar">
+        <span>Cid's Library</span>
+        <div *ngIf="isLoggedIn()">
+            <button mat-button (click)="navigateHome()" matTooltip="Home">
+                <span class="material-symbols-outlined header-toolbar">
+                    home
+                </span>
+            </button>
+            <button mat-button (click)="navigateBookSearch()" matTooltip="Search for a book">
+                <span class="material-symbols-outlined header-toolbar">
+                    auto_stories
+                </span>
+            </button>
+        </div>
+        <div *ngIf="isLibrarian()">
+            <button [matMenuTriggerFor]="libMenu" mat-button class="account-icon" matTooltip="Librarian Tools">
+                <span class="material-symbols-outlined header-toolbar">
+                    computer
+                </span>
+            </button>
+            <mat-menu #libMenu="matMenu">
+                <button mat-menu-item (click)="navigateAddBook()" >Add Book</button>
+            </mat-menu>
+        </div>
+        <button mat-button [matMenuTriggerFor]="menu" class="account-icon" matTooltip="Account">
+            <span class="material-symbols-outlined header-toolbar">
+                account_circle
+            </span>
+        </button>
+        <mat-menu #menu="matMenu">
+            <div *ngIf="!isLoggedIn()">
+                <button mat-menu-item (click)="navigateSignIn()">Sign In</button>
+                <button mat-menu-item (click)="navigateRegister()">Register</button>
+            </div>
+            <div *ngIf="isLoggedIn()">
+                <button mat-menu-item (click)="signOut()">Sign Out</button>
+            </div>
+        </mat-menu>
+      </mat-toolbar>
+</div>
