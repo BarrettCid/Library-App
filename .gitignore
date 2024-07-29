@@ -1,0 +1,13 @@
+
+/BackEnd/LibraryAPI/bin
+/BackEnd/LibraryUtilities/obj
+/BackEnd/LibraryViewModels/obj
+/BackEnd/LibraryViewModels/bin
+/BackEnd/LibraryUtilities/bin
+/BackEnd/LibraryServices/obj
+/BackEnd/LibraryServices/bin
+/BackEnd/LibraryModel/obj
+/BackEnd/LibraryModel/bin
+/BackEnd/LibraryMappers/obj
+/BackEnd/LibraryMappers/bin
+/BackEnd/LibraryAPI/obj

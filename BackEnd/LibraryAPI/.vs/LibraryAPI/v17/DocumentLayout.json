@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09817E8C-2923-4AEF-AC72-95463959632A}|..\\LibraryViewModels\\LibraryViewModels.csproj|d:\\development\\libraryapp\\backend\\libraryviewmodels\\viewmodels\\bookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83477CC9-5C87-4631-89F1-BF5ACB0A5B7E}|..\\LibraryModel\\LibraryModel.csproj|d:\\development\\libraryapp\\backend\\librarymodel\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE37713A-D6DC-4D57-8F66-33E9CA97B517}|..\\LibraryMappers\\LibraryMappers.csproj|d:\\development\\libraryapp\\backend\\librarymappers\\bookmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE37713A-D6DC-4D57-8F66-33E9CA97B517}|..\\LibraryMappers\\LibraryMappers.csproj|d:\\development\\libraryapp\\backend\\librarymappers\\libraryusermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE37713A-D6DC-4D57-8F66-33E9CA97B517}|..\\LibraryMappers\\LibraryMappers.csproj|d:\\development\\libraryapp\\backend\\librarymappers\\reviewmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|d:\\development\\libraryapp\\backend\\libraryapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543E0FE1-44A4-413A-9D0C-81D068C7B694}|..\\LibraryServices\\LibraryServices.csproj|d:\\development\\libraryapp\\backend\\libraryservices\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543E0FE1-44A4-413A-9D0C-81D068C7B694}|..\\LibraryServices\\LibraryServices.csproj|d:\\development\\libraryapp\\backend\\libraryservices\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|d:\\development\\libraryapp\\backend\\libraryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83477CC9-5C87-4631-89F1-BF5ACB0A5B7E}|..\\LibraryModel\\LibraryModel.csproj|d:\\development\\libraryapp\\backend\\librarymodel\\migrations\\librarydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83477CC9-5C87-4631-89F1-BF5ACB0A5B7E}|..\\LibraryModel\\LibraryModel.csproj|d:\\development\\libraryapp\\backend\\librarymodel\\migrations\\20240729225023_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83477CC9-5C87-4631-89F1-BF5ACB0A5B7E}|..\\LibraryModel\\LibraryModel.csproj|d:\\development\\libraryapp\\backend\\librarymodel\\model\\usercheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|d:\\development\\libraryapp\\backend\\libraryapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{26349B17-C0DE-4BE4-9351-F1E5E9FADB83}|LibraryAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83477CC9-5C87-4631-89F1-BF5ACB0A5B7E}|..\\LibraryModel\\LibraryModel.csproj|d:\\development\\libraryapp\\backend\\librarymodel\\context\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAmwHEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:25:23.798Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryServices\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "..\\LibraryServices\\Services\\BookService.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryServices\\Services\\BookService.cs",
+              "RelativeToolTip": "..\\LibraryServices\\Services\\BookService.cs",
+              "ViewState": "AQIAAKoAAAAAAAAAAAAswK4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:28:34.445Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryServices\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "..\\LibraryServices\\Interfaces\\IBookService.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryServices\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "..\\LibraryServices\\Interfaces\\IBookService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwBYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:28:12.312Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookVM.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryViewModels\\ViewModels\\BookVM.cs",
+              "RelativeDocumentMoniker": "..\\LibraryViewModels\\ViewModels\\BookVM.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryViewModels\\ViewModels\\BookVM.cs",
+              "RelativeToolTip": "..\\LibraryViewModels\\ViewModels\\BookVM.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T23:03:56.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewMapper.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\ReviewMapper.cs",
+              "RelativeDocumentMoniker": "..\\LibraryMappers\\ReviewMapper.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\ReviewMapper.cs",
+              "RelativeToolTip": "..\\LibraryMappers\\ReviewMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T23:03:27.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibraryUserMapper.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\LibraryUserMapper.cs",
+              "RelativeDocumentMoniker": "..\\LibraryMappers\\LibraryUserMapper.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\LibraryUserMapper.cs",
+              "RelativeToolTip": "..\\LibraryMappers\\LibraryUserMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T23:03:24.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookMapper.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\BookMapper.cs",
+              "RelativeDocumentMoniker": "..\\LibraryMappers\\BookMapper.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryMappers\\BookMapper.cs",
+              "RelativeToolTip": "..\\LibraryMappers\\BookMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T23:03:20.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240729225023_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Migrations\\20240729225023_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\LibraryModel\\Migrations\\20240729225023_InitialCreate.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Migrations\\20240729225023_InitialCreate.cs",
+              "RelativeToolTip": "..\\LibraryModel\\Migrations\\20240729225023_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:50:35.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAEYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:37:11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Model\\Book.cs",
+              "RelativeDocumentMoniker": "..\\LibraryModel\\Model\\Book.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Model\\Book.cs",
+              "RelativeToolTip": "..\\LibraryModel\\Model\\Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:00:14.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LibraryDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "..\\LibraryModel\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "RelativeToolTip": "..\\LibraryModel\\Migrations\\LibraryDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:53:09.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-29T22:19:53.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Context\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "..\\LibraryModel\\Context\\LibraryDbContext.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Context\\LibraryDbContext.cs",
+              "RelativeToolTip": "..\\LibraryModel\\Context\\LibraryDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:01:36.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserCheckout.cs",
+              "DocumentMoniker": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Model\\UserCheckout.cs",
+              "RelativeDocumentMoniker": "..\\LibraryModel\\Model\\UserCheckout.cs",
+              "ToolTip": "D:\\Development\\LibraryApp\\BackEnd\\LibraryModel\\Model\\UserCheckout.cs",
+              "RelativeToolTip": "..\\LibraryModel\\Model\\UserCheckout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T21:59:49.986Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

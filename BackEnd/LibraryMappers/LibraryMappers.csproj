@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>LibraryMappers</AssemblyName>
+    <RootNamespace>LibraryMappers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryModel\LibraryModel.csproj" />
+    <ProjectReference Include="..\LibraryViewModels\LibraryViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
