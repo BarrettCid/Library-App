@@ -25,6 +25,7 @@ export const SessionGuard: CanActivateFn = (
         tokenDate.setHours(tokenDate.getHours() + tokenOffset);
         currentDate.setHours(currentDate.getHours() + currentOffset);
         if(currentDate.getHours() - tokenDate.getHours() > 1) {
+            session.clearSession();
             return inject(Router).createUrlTree(["/", "login"]);
         } else {
             return of(true);
